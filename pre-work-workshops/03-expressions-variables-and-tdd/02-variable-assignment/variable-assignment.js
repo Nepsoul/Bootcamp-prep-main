@@ -1,5 +1,5 @@
 // YOUR CODE BELOW
-let myFirstName = "Niru";
+let myFirstName = "";
 
 let myFavoriteNum = 4;
 
