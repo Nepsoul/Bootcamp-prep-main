@@ -7,5 +7,6 @@ other object by name.
 ```javascript
 console.log(me2.name); // 'Tarana'
 console.log(you.name); // 'Alyssa'
+let you = { name: "Jeff" };
 me2.getGreeting(you); // => 'Hi Alyssa, my name is Tarana.'
 ```
