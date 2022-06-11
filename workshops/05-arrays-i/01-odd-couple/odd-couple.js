@@ -1,15 +1,20 @@
 // YOUR CODE BELOW
-function oddCouple(para) {
-  let arr = [];
-  debugger;
-  for (let i = 0; i < para.length; i++) {
-    if (arr[i] % 2 === 1) {
-      arr.push(para[i]);
-    }
-    if (para.length === 2) {
-      break;
+//oddCouple([1, 2, 3, 4, 5]); // => [1, 3]
+function oddCouple(arr) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    let currVal = arr[i];
+    if (currVal % 2 === 1) {
+      result.push(currVal);
+      if (result.length === 2) {
+        break;
+      }
     }
   }
-  return head;
+  return result;
 }
-oddCouple([2, 5, 7, 8, 6, 4]);
+
+//console.log(oddCouple([1, 2, 3, 4, 5]));
+
+let result = oddCouple([1, 2, 3, 4, 5]);
+console.log(result);
