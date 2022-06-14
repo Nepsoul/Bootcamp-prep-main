@@ -6,7 +6,6 @@
 // let copy2 = myArray.slice();
 // copy2[1].push(4);
 // console.log(myArray); // [1, [2, 3, 4]]
-
 function deeperCopy(array) {
   let result = [];
   for (let i = 0; i < array.length; i++) {
@@ -14,12 +13,10 @@ function deeperCopy(array) {
     if (Array.isArray(currVal)) {
       let myArray = [];
       for (let j = 0; j < currVal.length; j++) {
-        myArray.push(currVal);
+        myArray.push(currVal[j]);
       }
-      result.push(myArray);
-    } else {
-      result.push(currVal);
     }
+    result.push(currVal);
   }
   return result;
 }
