@@ -15,8 +15,10 @@ function deeperCopy(array) {
       for (let j = 0; j < currVal.length; j++) {
         myArray.push(currVal[j]);
       }
+      result.push(myArray);
+    } else {
+      result.push(currVal);
     }
-    result.push(currVal);
   }
   return result;
 }

@@ -8,9 +8,9 @@ should be a sentence about each of the animals in the zoo.
 
 ```javascript
 let myZoo = [
-  ['King Kong', ['gorilla', 42]],
-  ['Nemo', ['fish', 5]],
-  ['Punxsutawney Phil', ['groundhog', 11]]
+  ["King Kong", ["gorilla", 42]],
+  ["Nemo", ["fish", 5]],
+  ["Punxsutawney Phil", ["groundhog", 11]],
 ];
 
 zooInventory(myZoo);
